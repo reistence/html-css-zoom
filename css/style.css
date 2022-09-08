@@ -29,6 +29,7 @@ main {
   height: 100vh;
   background-color: black;
   border: 1px solid;
+  position: relative;
 }
 
 /* .window {
@@ -36,11 +37,37 @@ main {
   width: 95%;
 } */
 
+.view-mode {
+  color: white;
+  text-align: right;
+  padding: 1em;
+  vertical-align: middle;
+  margin: 1em;
+}
+
+.view-mode i {
+  font-size: 1rem;
+}
+
+#speaker-view {
+  background-color: #4a4a4a;
+  vertical-align: middle;
+  padding: 1em;
+  margin-right: 1em;
+  border-radius: 5px;
+}
+
+#expand {
+  background-color: #4a4a4a;
+  padding: 1em;
+  vertical-align: middle;
+  border-radius: 5px;
+}
 .wrapper {
   background-color: red;
   width: 95%;
   height: 80vh;
-  margin: 3em auto;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   overflow: scroll;
@@ -119,4 +146,5 @@ main {
   color: red;
   background-color: grey;
   padding: 2em;
+  border-radius: 5px;
 }
