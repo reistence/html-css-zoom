@@ -5,6 +5,11 @@
 }
 
 /* COMMON */
+html {
+  font-size: 100%;
+  font-family: sans-serif;
+}
+
 img {
   width: 100%;
 }
@@ -13,6 +18,12 @@ ul {
   text-decoration: none;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* MAIN */
 main {
   width: 100%;
   height: 100vh;
@@ -20,11 +31,64 @@ main {
   border: 1px solid red;
 }
 
+/* TOOLBAR */
 .toolbar {
+  background-color: #222222;
   height: 100px;
-  background-color: blue;
   width: 100%;
   position: fixed;
   bottom: 0;
   left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.arrow {
+  font-size: 1rem;
+  padding: 1em 1em 0 0;
+}
+.icon > i {
+  font-size: 2rem;
+}
+
+.play {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1em;
+}
+
+.play span {
+  font-size: 0.9rem;
+  padding: 0.9em 0.5em 0 0;
+}
+
+.green {
+  color: lime;
+}
+
+.tool {
+  color: white;
+  width: 35%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.tool span {
+  font-size: 0.9rem;
+  padding: 0.9em 0.5em 0 0;
+}
+
+.end {
+  color: red;
+  background-color: grey;
+  padding: 2em;
 }
