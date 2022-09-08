@@ -28,9 +28,35 @@ main {
   width: 100%;
   height: 100vh;
   background-color: black;
-  border: 1px solid red;
+  border: 1px solid;
 }
 
+.window {
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+}
+
+.wrapper {
+  width: 70%;
+  margin: 5em auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: calc(100% / 7);
+  position: relative;
+  padding: 0 0.5em 0.5em 0;
+}
+
+.user {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  background-color: #222222;
+  color: white;
+}
 /* TOOLBAR */
 .toolbar {
   background-color: #222222;
@@ -71,7 +97,7 @@ main {
   padding: 0.9em 0.5em 0 0;
 }
 
-.green {
+.green > i {
   color: lime;
 }
 
